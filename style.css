@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Knewave&family=Lacquer&family=Luckiest+Guy&family=Nanum+Myeongjo&family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+.container{
+  width:1140px;
+  margin:0 auto;
+}
+section{
+  padding: 5vw 5vw;
+}
+
+/*header*/
+header{
+  position:absolute;
+  top:0;
+  width:100%;
+  padding:1rem;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+header button{
+  background-color: transparent;
+  border:0;
+  cursor: pointer;
+}
+header i{
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li{
+  padding: 10px;
+}
+header nav ul li button{
+  font-size: 15px; 
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-family: "Lacquer", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*main*/
+
+main .container2{
+  width:30rem;
+  height: 30rem;
+  position:absolute;
+  right: 10rem;
+  bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(../images/crayon\ texture.png);
+  background-size:cover;
+  background-position: center;
+}
+main{
+  width:100%;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(rgba(240, 242, 247, 0.8), rgba(108, 132, 199, 0.8)), url(../images/background1.jpg) center center;
+  background-size: cover;
+}
+main h3{
+  z-index:0;
+  font-size: 3rem;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.2rem;
+  -webkit-text-stroke: 0.24vw rgb(9,84,160);
+  text-shadow: 2px 2px 5px black;
+}
+
+main h3 span:nth-child(1) {color: rgb(236,3,51)}
+main h3 span:nth-child(2) {color: rgb(60,196,58)}
+main h3 span:nth-child(3) {color: rgb(251,232,31)}
+main h3 span:nth-child(4) {color: rgb(54,191,241)}
+main h3 span:nth-child(5) {color: rgb(236,3,51)}
+main h3 span:nth-child(6) {color: rgb(60,196,58)}
+
+main h2{
+  font-size: 5rem;
+  margin:0 0;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.3rem;
+  -webkit-text-stroke: 0.4rem rgb(9,84,160);
+  text-shadow: 3px 3px 5px black;
+}
+main h2 span:nth-child(1) {color: rgb(251,232,31)}
+main h2 span:nth-child(2) {color: rgb(54,191,241)}
+main h2 span:nth-child(3) {color: rgb(236,3,51)}
+main h2 span:nth-child(4) {color: rgb(60,196,58)}
+main h2 span:nth-child(5) {color: rgb(251,232,31); padding-right: 1.5vw}
+main h2 span:nth-child(6) {color: rgb(54,191,241)}
+main h2 span:nth-child(7) {color: rgb(236,3,51)}
+main h2 span:nth-child(8) {color: rgb(60,196,58)}
+
+main h4{
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color:black;
+  padding-bottom: 2rem;
+}
+
+main h4 span::after{
+  content:'';
+  height: 2rem;
+  width: 1px;
+  background: black;
+  display: inline-block;
+  animation: blink 0.7s ease-in-out infinite;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+main p{
+  font-size: 1.5rem;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+main button{
+  font-size: 2rem;
+  background-color: transparent;
+  border:0;
+  cursor: pointer;
+}
+main .container3{
+  position: absolute;
+  left: 5rem;
+  bottom: 1rem;
+}
+main .character{
+  width:50%;
+  filter: blur(10px), drop-shadow(2px 2px 5px black);
+  animation: focus 1s ease-out forwards;
+}
+
+@keyframes focus{
+  0%{
+    filter: blur(10px) drop-shadow(2px 2px 5px black);
+  }
+  100%{
+    filter: blur(0) drop-shadow(2px 2px 5px black);
+  }
+}
+
+/*about*/
+
+section .about-title h4{
+  margin-left: 3rem;
+  font-size: 2.5rem;
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+section .about-title h2{
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  font-size: 5.5rem;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.3rem;
+  -webkit-text-stroke: 0.4rem rgb(9,84,160);
+  text-shadow: 3px 3px 5px black;
+}
+section .about-title h2 span:nth-child(1) {color: rgb(251,232,31)}
+section .about-title h2 span:nth-child(2) {color: rgb(54,191,241)}
+section .about-title h2 span:nth-child(3) {color: rgb(236,3,51)}
+section .about-title h2 span:nth-child(4) {color: rgb(60,196,58)}
+section .about-title h2 span:nth-child(5) {color: rgb(251,232,31); padding-right: 1.5vw}
+section .about-title h2 span:nth-child(6) {color: rgb(54,191,241)}
+section .about-title h2 span:nth-child(7) {color: rgb(236,3,51)}
+
+section .about-self{
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+section .about-self::after{
+  content:'';
+  clear: both;
+  display: block;
+}
+
+section .about-self .left {
+  float: left;
+  width: 50%;
+}
+section .about-self .left img{
+  width: 100%;
+  filter: drop-shadow(2px 2px 5px black);
+}
+
+section .about-self .right {
+  float: left;
+  width: 50%;
+  padding-left: 2rem;
+
+}
+
+section .about-self .right h3{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-weight: 600;
+}
+section .about-self .right h3 span{
+  color: rgb(9,84,160);
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+section .about-self .right p{
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+section .about-self .right p:nth-child(4){
+  margin-bottom: 2rem;
+}
+
+section .about-self .right .social a{
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+/*features*/
+
+section .features-title h4{
+  margin-left: 3rem;
+  font-size: 2.5rem;
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+section .features-title h2{
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  font-size: 5.5rem;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.3rem;
+  -webkit-text-stroke: 0.4rem rgb(9,84,160);
+  text-shadow: 3px 3px 5px black;
+}
+section .features-title h2 span:nth-child(1) {color: rgb(251,232,31)}
+section .features-title h2 span:nth-child(2) {color: rgb(54,191,241)}
+section .features-title h2 span:nth-child(3) {color: rgb(236,3,51)}
+section .features-title h2 span:nth-child(4) {color: rgb(60,196,58)}
+section .features-title h2 span:nth-child(5) {color: rgb(251,232,31)}
+section .features-title h2 span:nth-child(6) {color: rgb(54,191,241)}
+section .features-title h2 span:nth-child(7) {color: rgb(236,3,51)}
+section .features-title h2 span:nth-child(8) {color: rgb(60,196,58)}
+
+section .features-me{
+  margin: auto;
+}
+section .features-me::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+section .features-me .me-in{
+  width: 31%;
+  height: 15rem;
+  padding: 2rem;
+  float: left;
+  margin-right: 3.5%;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(0,0,0,0);
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+section .features-me .me-in:last-child{
+  margin-right: 0;
+}
+section .features-me .me-in:nth-child(1){
+  background-image: url(../images/white.png);
+  background-size: 100% 100%;
+  background-position: center;
+  filter: drop-shadow(2px 2px 5px black);
+}
+section .features-me .me-in:nth-child(2){
+  background-image: url(../images/white.png);
+  background-size: 100% 100%;
+  background-position: center;
+  filter: drop-shadow(2px 2px 5px black);
+}
+section .features-me .me-in:nth-child(3){
+  background-image: url(../images/white.png);
+  background-size: 100% 100%;
+  background-position: center;
+  filter: drop-shadow(2px 2px 5px black);
+}
+section .features-me .me-in .icon i{
+  font-size: 2rem;
+}
+section .features-me .me-in h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+section .features-me .me-in p{
+  font-size: 1.2rem;
+}
+
+section .features-me .me-in:nth-child(1):hover{
+  background-image: url(../images/red.png);
+  background-size: 100% 100%;
+  background-position: center;
+  filter: drop-shadow(2px 2px 5px black);
+  color: black;
+}
+section .features-me .me-in:nth-child(2):hover{
+  background-image: url(../images/green.png);
+  background-size: 100% 100%s;
+  background-position: center;
+  filter: drop-shadow(2px 2px 5px black);
+  color: black;
+}
+section .features-me .me-in:nth-child(3):hover{
+  background-image: url(../images/yellow.png);
+  background-size: 100% 100%;
+  background-position: center;
+  filter: drop-shadow(2px 2px 5px black);
+  color: black;
+}
+
+/*background*/
+
+.bg{
+  position: relative;
+  background: url('../images/background2.webp') center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(13, 22, 70, 0.5);
+}
+
+/*media query*/
+
+@media screen and (max-width: 1140px){
+  html{
+    font-size: 11px;
+  }
+  main .container{
+    width:992px;
+  }
+  section .container{
+    width: 600px;
+  }
+  section .features-me .me-in{
+    width: 47%;
+    margin-bottom: 4rem;
+    margin-right: 0;
+  }
+  section .features-me .me-in:nth-child(1){
+    margin-right: 6%;
+  }
+}
+@media screen and (max-width: 992px){
+  html{
+    font-size: 10px;
+  }
+  main .container{
+    width:768px;
+  }
+  section .about-self .left {
+    width: 100%
+  }
+  section .about-self .right {
+    width: 100%
+  }
+  section .features-me .me-in{
+    width: 45%;
+    margin-bottom: 4rem;
+    margin-right: 0;
+  }
+  section .features-me .me-in:nth-child(1){
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 768px){
+  html{
+    font-size: 9px;
+  }
+  main .container{
+    width:576px;
+  }
+  section .container{
+    width: 400px;
+  }
+  section .about-self .left {
+    width: 100%
+  }
+  section .about-self .right {
+    width: 100%
+  }
+  section .about-title,
+  section .features-title{
+    text-align: center;
+  }
+  section .about-title h4,
+  section .about-title h2,
+  section .features-title h4,
+  section .features-title h2{
+    margin-left: 0;
+  }
+  section .features-me .me-in{
+    width: 60%;
+    margin: 0 20% 4rem 20%;
+    
+  }
+}
+@media screen and (max-width: 576px){
+  html{
+    font-size: 8px;
+  }
+  main .container{
+    width:400px;
+  }
+  section .container{
+    width: 360px;
+  }
+  section .about-self .left {
+    width: 100%
+  }
+  section .about-self .right {
+    width: 100%
+  }
+  section .about-title,
+  section .features-title{
+    text-align: center;
+  }
+  section .about-title h4,
+  section .about-title h2,
+  section .features-title h4,
+  section .features-title h2{
+    margin-left: 0;
+  }
+  section .features-me .me-in{
+    width: 60%;
+    margin: 0 20% 4rem 20%;
+    
+  }
+}
+@media screen and (max-width: 400px){
+  html{
+    font-size: 7px;
+  }
+  main .container{
+    width:320px;
+  }
+  section .container{
+    width: 320px;
+  }
+  section .about-self .left {
+    width: 100%
+  }
+  section .about-self .right {
+    width: 100%
+  }
+  section .about-title,
+  section .features-title{
+    text-align: center;
+  }
+  section .about-title h4,
+  section .about-title h2,
+  section .features-title h4,
+  section .features-title h2{
+    margin-left: 0;
+  }
+  section .features-me .me-in{
+    width: 60%;
+    margin: 0 20% 4rem 20%;
+    
+  }
+}
