@@ -5,31 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>project 1</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="javascript" href="script.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 <!--header-->
   <header>
     <div class="container">
-      <h1>
-        <button data-animation-scroll="true" data-target="@main">
+      <button data-animation-scroll="true" data-target="#main">
           <i class="fa-solid fa-cloud"></i>
-        </button>
-      </h1>
+      </button>
       <nav>
         <ul>
           <li>
-            <button data-animation-scroll="true" data-target="@about">About</button>
+            <button data-animation-scroll="true" data-target="#about">About</button>
           </li>
           <li>
-            <button data-animation-scroll="true" data-target="@features">Features</button>
+            <button data-animation-scroll="true" data-target="#features">Features</button>
           </li>
           <li>
-            <button data-animation-scroll="true">Portfolio</button>
+            <button data-animation-scroll="true" data-target="#portfolio">Portfolio</button>
           </li>
           <li>
-            <button data-animation-scroll="true">Contact</button>
+            <button data-animation-scroll="true" data-target="#contact">Contact</button>
           </li>
         </ul>
       </nav>
@@ -57,7 +54,7 @@
           <span>O</span>
           <span>O</span>
         </h2>
-        <h4>- <span>a medical student </span> - </h4>
+        <h4>- <span></span> - </h4>
         <p>
           This website is for recording my achievements so far, and it's my secret laboratory that uses javascript or pytorch.
         </p>
@@ -66,10 +63,14 @@
         </button>
       </div>
       <div class="container3">
-        <img src="images/shin chan and white dog.png" class="character">
+        <img src="images/shin-chan-white-dog.png" alt="shin-chan" class="character">
       </div>
     </div>
   </main>
+<!--background-->
+<div class="bg">
+  <div class="overlay"></div>
+  </div>
 <!--about-->
   <section id="about">
     <div class="container">
@@ -87,7 +88,7 @@
       </div>
       <div class="about-self">
         <div class="left">
-          <img src="images/sally tape.png" alt="sally">
+          <img src="images/sally-tape.png" alt="sally">
         </div>
         <div class="right">
           <h3>Hello, I'm 
@@ -111,6 +112,11 @@
       </div>
     </div>
   </section>
+  <!--background-->
+<!--background-->
+  <div class="bg">
+  <div class="overlay"></div>
+  </div>
 <!--features-->
   <section id="features">
     <div class="container">
@@ -128,7 +134,7 @@
         </h2>
       </div>
       <div class="features-me">
-        <div class="me-in">
+        <div class="features-in">
           <div class="icon">
             <i class="fa-solid fa-user-doctor"></i>
           </div>
@@ -137,7 +143,7 @@
             <p>As a 3rd year student, I have studied both basic medicine and clinical medicine. In addition, I am also participating in student medical research.</p>
           </div>
         </div>
-        <div class="me-in">
+        <div class="features-in">
           <div class="icon">
             <i class="fa-solid fa-computer"></i>
           </div>
@@ -146,7 +152,7 @@
             <p>Starting with AI development using pytorch, I am now studying a wide range of 'coding' including front-end development.</p>
           </div>
         </div>
-        <div class="me-in">
+        <div class="features-in">
           <div class="icon">
             <i class="fa-solid fa-person-biking"></i>
           </div>
@@ -162,5 +168,109 @@
   <div class="bg">
     <div class="overlay"></div>
   </div>
+<!--portfolio-->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-title">
+        <h4>What I Did</h4>
+        <h2>
+          <span>P</span>
+          <span>O</span>
+          <span>R</span>
+          <span>T</span>
+          <span>F</span>
+          <span>O</span>
+          <span>L</span>
+          <span>I</span>
+          <span>O</span>
+        </h2>
+      </div>
+      <div class="portfolio-me">
+        <div class="portfolio-in">
+          <img src="images/vacation.jpg" alt="portfoli image1">
+          <i class="fa-solid fa-plane"></i>
+        </div>
+        <div class="portfolio-in">
+          <img src="images/boyfriend.jpg" alt="portfoli image2">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="portfolio-in">
+          <img src="images/AI.webp" alt="portfoli image3">
+          <i class="fa-solid fa-computer-mouse"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--background-->
+  <div class="bg">
+    <div class="overlay"></div>
+  </div>
+<!--contact-->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-title">
+        <h4>Any questions?</h4>
+        <h2>
+          <span>C</span>
+          <span>O</span>
+          <span>N</span>
+          <span>T</span>
+          <span>A</span>
+          <span>C</span>
+          <span>T</span>
+        </h2>
+      </div>
+      <div class="contact-me">
+        <div class="left">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <h3>Mail</h3>
+              <p>sallyboo1129@naver.com</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info-text">
+              <h3>Phone</h3>
+              <p>010-1234-5678</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </div>
+            <div class="info-text">
+              <h3>Address</h3>
+              <p>Gangdong-gu, Seoul, Republic of Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <form action="#">
+            <div class="form-group">
+              <label for="name">name</label>
+              <input type="text" id="name" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="text" id="email" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="msg">msg</label>
+              <textarea id="msg"></textarea>
+            </div>
+            <button>send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--script-->
+<script src="script.js"></script>
 </body>
 </html>
