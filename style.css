@@ -778,4 +778,11 @@ section .contact-me .right button{
     width:100%;
     margin:3rem 0;
   }
+  main .container2{
+    right: auto;
+  }
+  main .container{
+    display: flex;
+    justify-content:center;
+  }
 }
